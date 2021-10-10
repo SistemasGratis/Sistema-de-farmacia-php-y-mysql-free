@@ -1,6 +1,6 @@
 # Sistema-de-venta-Php-y-Mysql-Gratis
 Panel de Admistración del sistema de venta en Php y Mysql
-![sis](https://user-images.githubusercontent.com/88554898/128939852-572098b6-762e-4274-96c5-d36966422fff.jpg)
+![Sin título](https://user-images.githubusercontent.com/88554898/136677060-b9a2aefb-8961-41b7-bec0-d573708fca33.jpg)
 
 Plantilla Utilizada
 https://github.com/creativetimofficial/material-dashboard
