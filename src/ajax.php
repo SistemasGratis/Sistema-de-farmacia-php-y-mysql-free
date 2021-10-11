@@ -18,7 +18,7 @@ if (isset($_GET['q'])) {
     $datos = array();
     $nombre = $_GET['pro'];
     $hoy = date('Y-m-d');
-    $producto = mysqli_query($conexion, "SELECT * FROM producto WHERE codigo LIKE '%" . $nombre . "%' OR descripcion LIKE '%" . $nombre . "%' AND vencimiento = '0000-00-00' OR vencimiento > '$hoy'");
+    $producto = mysqli_query($conexion, "SELECT * FROM producto WHERE codigo LIKE '%" . $nombre . "%' OR descripcion LIKE '%" . $nombre . "%' AND vencimiento > '$hoy' OR vencimiento = '0000-00-00'");
     while ($row = mysqli_fetch_assoc($producto)) {
         $data['id'] = $row['codproducto'];
         $data['label'] = $row['codigo'] . ' - ' .$row['descripcion'];
