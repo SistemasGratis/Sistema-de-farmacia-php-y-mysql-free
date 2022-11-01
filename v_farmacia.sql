@@ -164,7 +164,7 @@ CREATE TABLE `producto` (
   `id_lab` int(11) NOT NULL,
   `id_presentacion` int(11) NOT NULL,
   `id_tipo` int(11) NOT NULL,
-  `vencimiento` date NOT NULL
+  `vencimiento` varchar(20) COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 -- --------------------------------------------------------
