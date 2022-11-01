@@ -97,7 +97,7 @@ include_once "includes/header.php";
                         <?php
                         include "../conexion.php";
                         $hoy = date('Y-m-d');
-                        $query = mysqli_query($conexion, "SELECT p.*, t.id, t.tipo, pr.id, pr.nombre FROM producto p INNER JOIN tipos t ON p.id_tipo = t.id INNER JOIN presentacion pr ON p.id_presentacion = pr.id WHERE p.vencimiento != '0000-00-00' AND p.vencimiento < '$hoy'");
+                        $query = mysqli_query($conexion, "SELECT p.*, t.tipo, pr.nombre FROM producto p INNER JOIN tipos t ON p.id_tipo = t.id INNER JOIN presentacion pr ON p.id_presentacion = pr.id WHERE p.vencimiento != '0000-00-00' AND p.vencimiento < '$hoy'");
                         $result = mysqli_num_rows($query);
                         if ($result > 0) {
                             while ($data = mysqli_fetch_assoc($query)) { ?>
